@@ -1,13 +1,13 @@
 // check login status
-window.onload = function checkLoginStatus() {
-	let loginSession = sessionStorage.getItem('loginSession');
-	if (loginSession) {
-		loginSession = JSON.parse(loginSession);
-	}
-	if (loginSession && loginSession.loggedIn && loginSession.isAdmin) {
-		window.location.href = 'index.html';
-	}
-}
+// window.onload = function checkLoginStatus() {
+// 	let loginSession = sessionStorage.getItem('loginSession');
+// 	if (loginSession) {
+// 		loginSession = JSON.parse(loginSession);
+// 	}
+// 	if (loginSession && loginSession.loggedIn && loginSession.isAdmin) {
+// 		window.location.href = 'index.html';
+// 	}
+// }
 
 // import database functions
 import { fetchData, writeData, updateData, deleteData } from "./firebase.js";
